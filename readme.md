@@ -10,21 +10,21 @@ AI-EP's digital solution involves a backend server oriented to servicing core ta
 
 ### Minimum Tasks
 - [x] OCR Scanning (Unstructured): IEP multi-page PDF document -> Text
-- [] Batched Chat Completion: 3 Types of Prompts, Config & Run
-- [] Native Batched Translation: English to Spanish
+- [ ] Batched Chat Completion: 3 Types of Prompts, Config & Run
+- [ ] Native Batched Translation: English to Spanish
 
 ### Utility Tasks
-- [] Automated Email: One-Button Communication between parents and school staff
-- [] Lookup: Dictionary of Relevant Terms & Evaluative Goals
-- [] Batch Transcription: Audio -> Text for Generating Parent Meeting Transcipts
+- [ ] Automated Email: One-Button Communication between parents and school staff
+- [ ] Lookup: Dictionary of Relevant Terms & Evaluative Goals
+- [ ] Batch Transcription: Audio -> Text for Generating Parent Meeting Transcipts
 
 ### Advanced
 
-- [] OCR Scanning (Structured): Detect and preserve checkboxes, lists and tables
-- [] Strict Schema Validation
-- [] Unit Testing
-- [] Documentation Page
-- [] Jenkins Pipeline for CI/CD
-- [] Host Docker Image for Horizontal Scaling
-- [] AWS Secret/Env Var for API Key
-- [] User Login and Database
+- [ ] OCR Scanning (Structured): Detect and preserve checkboxes, lists and tables
+- [ ] Strict Schema Validation
+- [ ] Unit Testing
+- [ ] Documentation Page
+- [ ] Jenkins Pipeline for CI/CD
+- [ ] Host Docker Image for Horizontal Scaling
+- [ ] AWS Secret/Env Var for API Key
+- [ ] User Login and Database

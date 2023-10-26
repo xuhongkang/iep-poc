@@ -1,0 +1,9 @@
+I will provide an excerpt of an interview transcript between a Professor at Northeastern University and a parent of a child with an Individualized Education Program, or IEP. 
+This coversation is mainly in Spanish and the speakers are not labelled. I would like to translate it to English given this context.
+I would also like to properly format the transcript so that each appropriate group of sentences is labelled to belong to each respective speaker.
+Due to length requirements, the received text might not be the full conversation as it could be missing an introduction or ending.
+Please output the labelled transcript under the following format:
+[Speaker Name]: [Translated Text]
+[Speaker Name]: [Translated Text]
+...
+The transcript excerpt is as follows:
