@@ -10,13 +10,13 @@ AI-EP's digital solution involves a backend server oriented to servicing core ta
 
 ### Minimum Tasks
 - [x] OCR Scanning (Unstructured): IEP multi-page PDF document -> Text
-- [ ] Batched Chat Completion: 3 Types of Prompts, Config & Run
-- [ ] Native Batched Translation: English to Spanish
+- [x] Batched Chat Completion: 3 Types of Prompts, Config & Run
+- [x] Native Batched Translation: English to Spanish
 
 ### Utility Tasks
 - [ ] Automated Email: One-Button Communication between parents and school staff
 - [ ] Lookup: Dictionary of Relevant Terms & Evaluative Goals
-- [ ] Batch Transcription: Audio -> Text for Generating Parent Meeting Transcipts
+- [x] Batch Transcription: Audio -> Text for Generating Parent Meeting Transcipts
 
 ### Advanced
 
