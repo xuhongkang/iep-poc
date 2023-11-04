@@ -7,9 +7,9 @@ Parents need quality and accurate translation to properly understand the IEP and
 
 ### Solutions
 
-[ ] a. schematize + translation -> Need Advanced OCR Scan
+- [ ] a. schematize + translation -> Need Advanced OCR Scan
 
-[x] b. batch translation -> Test Accuracy
+- [x] b. batch translation -> Test Accuracy
 
 ## 2. Explain complicated terms in basic language
 
@@ -17,9 +17,9 @@ Parents need more than translation to understand the IEP contents.
 
 ### Solutions
 
-[ ] reactive chatgpt message with predefined prompt
+- [ ] reactive chatgpt message with predefined prompt
 
-[ ] proactive needs way of searching for term
+- [ ] proactive needs way of searching for term
 
 ## 3. Provide local, national, online educational services related to diagnosis
 
@@ -27,11 +27,11 @@ Parents want to understand the best pathway forward for their child’s educatio
 
 ### [Solutions](https:/rapidapi.com/category/Education)
 
-[ ] Local / National - Browser location needed for local search + google maps API (hard and inaccurate)
+- [ ] Local / National - Browser location needed for local search + google maps API (hard and inaccurate)
 
-[ ] Online - Khan Academy, Googlee Classroom API, OpenED API
+- [ ] Online - Khan Academy, Googlee Classroom API, OpenED API
 
-[ ] Browser Search - Bloated - Could integrate into chatbot
+- [ ] Browser Search - Bloated - Could integrate into chatbot
 
 ## 4. Compare services being offered in IEP to best practices
 
@@ -39,9 +39,9 @@ Parents want to know what services typically are given to students based on cred
 
 ### Solutions
 
-[ ] Dependent on OCR
+- [ ] Dependent on OCR
 
-[ ] Localized Search & Descriptions
+- [ ] Localized Search & Descriptions
 
 ## 5. Provide advocacy resources related student’s educational needs.
 
@@ -49,9 +49,9 @@ Parents express great difficulty with the process and need support.
 
 ### Solutions
 
-[ ] Localized Guidelines and Best Practices
+- [ ] Localized Guidelines and Best Practices
 
-[ ] Automated Emails
+- [ ] Automated Emails
 
 ## 6. Derive points of advocacy from teacher comments on each goal.
 
@@ -59,8 +59,7 @@ Parents express the need to understand whether their student is making progress 
 
 ### Solutions
 
-
-[ ] Summarization OCR
+- [ ] Summarization OCR
 
 *Visual Cue
 
@@ -70,8 +69,8 @@ Parents expressed the need for their children to be successful.
 
 Solution:
 
-[ ] Need to generate algorithm for prediction - Accuracy
+- [ ] Need to generate algorithm for prediction - Accuracy
 
 ## 8. Create a basic summarize each section of the IEP.
 
-[ ] Which sections? Can they be read?
+- [ ] Which sections? Can they be read?
