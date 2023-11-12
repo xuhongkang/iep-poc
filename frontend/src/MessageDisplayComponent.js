@@ -8,7 +8,7 @@ function MessageDisplayComponent({ ws }) {
         if (ws) {
             ws.onmessage = (event) => {
                 const data = JSON.parse(event.data);
-                if (data.type === "response") {
+                if (data.type === "response" || data.type === "translation") {
                     setResponse(data.message);
                 }
             };

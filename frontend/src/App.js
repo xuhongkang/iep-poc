@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import FileUploadComponent from './FileUploadComponent';
 import MessageDisplayComponent from './MessageDisplayComponent';
+import TranslationDisplayComponent from './TranslationDisplayComponent';
 
 function App() {
     const [ws, setWs] = useState(null);
@@ -21,6 +22,7 @@ function App() {
     return (
         <div>
             <FileUploadComponent ws={ws} />
+            <TranslationDisplayComponent ws={ws}/>
             <MessageDisplayComponent ws={ws} />
         </div>
     );

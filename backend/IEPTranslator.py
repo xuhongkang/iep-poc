@@ -1,19 +1,24 @@
 import fitz, base64, requests
 from openai import OpenAI
-from io import BytesIO
+from io import BufferedReader, BytesIO
 
 class IEPTranslator:
-    def __init__(self, api_key: str, iep: BytesIO) -> None:
-        self.client = OpenAI(api_key=api_key)
+    def __init__(self, client:OpenAI, api_key: str) -> None:
+        self.client = client
         self.api_key = api_key
-        self.pdf = fitz.open(stream=iep, filetype="pdf")
+        self.pdf = None
         self.full_translation = ''
+    
+    def add_iep(self, iep: BytesIO):
+        self.pdf = fitz.open(stream=iep, filetype="pdf")
     
     def get_total_page_num(self) -> int:
         return len(self.pdf)
 
-    def _image_to_text(self, image: BytesIO):
+    def _image_to_text(self, image):
+        print('19')
         base64_image = base64.b64encode(image).decode('utf-8')
+        print('21')
         headers = {"Content-Type": "application/json",
                 "Authorization": f"Bearer {self.api_key}"}
         payload = {"model": "gpt-4-vision-preview",
@@ -24,6 +29,7 @@ class IEPTranslator:
                     "image_url": {
                         "url": f"data:image/jpeg;base64,{base64_image}"}}]}],
                 "max_tokens": 300}
+        print('32')
         response = requests.post("https://api.openai.com/v1/chat/completions", headers=headers, json=payload)
         return response.json().get('choices')[0].get('message').get('content')
 
@@ -44,12 +50,11 @@ class IEPTranslator:
     def get_page_translation(self, page_num:int, language:str='Spanish', image_format:str='jpeg'):
         # Get the page
         page = self.pdf[page_num]
+        print('50')
         # Render page to an image
         pix = page.get_pixmap()
-        buffer = BytesIO()
-        pix.save(buffer, format=image_format)
-        buffer.seek(0)
-        text = self._image_to_text(buffer)
+        text = self._image_to_text(pix.tobytes(image_format))
+        print('61')
         translated_text = self._translate_text(text,language)
         self.full_translation += f"Page {page_num + 1}:\n" + translated_text
         return translated_text

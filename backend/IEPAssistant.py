@@ -47,10 +47,10 @@ class IEPAssistant:
         run = self.client.beta.threads.runs.retrieve(
             thread_id=self.thread_id,
             run_id=self.run_id)
-        return run.created_at, run.expires_at, run.cancelled_at, run.completed_at
+        return run.created_at, run.completed_at, run.expires_at, run.cancelled_at
 
     def has_finished(self) -> bool:
-        return not self.get_status()[3]
+        return self.get_status()[1]
 
     def get_latest_message(self) -> str:
         if not self.has_finished(): raise Exception("Assistant Hasn't Finished Yet")
