@@ -20,10 +20,11 @@ AI-EP's digital solution involves a backend server oriented to servicing core ta
 
 ### Advanced
 
-- [ ] OCR Scanning (Structured): Detect and preserve checkboxes, lists and tables
+- [x] OCR Scanning (Structured): Detect and preserve checkboxes, lists and tables
 - [ ] Strict Schema Validation
 - [ ] Unit Testing
-- [ ] Documentation Page
+- [ ] Audio to Text Option
+- [x] Documentation
 - [ ] Jenkins Pipeline for CI/CD
 - [ ] Host Docker Image for Horizontal Scaling
 - [ ] AWS Secret/Env Var for API Key
